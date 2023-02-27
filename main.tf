@@ -44,7 +44,7 @@ resource "aws_instance" "blog" {
 }
 
 module "blog_sg" {
-  source  = "terraform-aws-module/security-group/aws"
+  source  = "terraform-aws-modules/security-group/aws"
   
   version     = "4.17.1"
   description = "Creating security group module"
