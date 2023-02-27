@@ -45,7 +45,7 @@ vpc_security_group_ids = [module.blog_sg.security_group_id]
 module "blog_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "4.17.1"
-  
+  description = "Creating security group module"
   name   = "blog"
   vpc_id = module.vpc.public_subnets[0]
 
