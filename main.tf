@@ -55,7 +55,7 @@ module "alb"{
   subnets         = module.blog_vpc.public_subnets
   security_groups = module.blog_sg.security_group_id
 
-  traget_groups = [
+  target_groups = [
     {
       name_prefix      = "blog-"
       backend_protocol = "HTTP"
