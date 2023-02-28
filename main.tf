@@ -45,7 +45,7 @@ resource "aws_instance" "blog" {
 
 module "alb"{
   source = "terraform-aws-module/alb/aws"
-  version = "~> 6.0"
+  version = "~> 8.0"
 
   name = "blog-alb"
 
